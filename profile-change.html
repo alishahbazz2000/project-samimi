@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HSE</title>
+    <!-- ? link stylesheet start -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ? link stylesheet end -->
+  </head>
+  <body>
+    <div class="container-fluid p-3">
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">HSE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >صفحه اصلی</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">آزمایشگاه</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  آزمون
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">آزمون</a></li>
+                  <li><a class="dropdown-item" href="#">آزمون</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">آزمون</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">اخبار</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.html">ارتباط با ما</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">درباره ما</a>
+              </li>
+            </ul>
+            <form class="d-flex border border-2 rounded" role="search">
+              <input
+                class="form-control me-2 border-0 outline-none"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn outline-none border-0" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <div
+              class="ms-3 d-flex justify-content-center align-items-center rounded rounded-circle"
+            >
+              <a href="#" class="fs-4 text-decoration-none link-dark px-2 py-1"
+                ><i class="bi bi-person"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="wrapper bg-white mt-sm-5">
+      <h4 class="pb-4 border-bottom">تنظیمات حساب</h4>
+      <div class="d-flex align-items-start py-3 border-bottom">
+        <img
+          src="./assets/img/crousel/1.jpg"
+          class="img me-3"
+          alt=""
+        />
+        <div class="pl-sm-4 pl-2" id="img-section">
+          <b>عکس پروفایل</b>
+          <p>Accepted file type .png. Less than 1MB</p>
+          <button class="btn button border w-50"><b>بارگزاری</b></button>
+        </div>
+      </div>
+      <div class="py-2">
+        <div class="row py-2">
+          <div class="col-md-6">
+            <label for="firstname">نام</label>
+            <input
+              type="text"
+              class="bg-light form-control"
+              placeholder="علی"
+            />
+          </div>
+          <div class="col-md-6 pt-md-0 pt-3">
+            <label for="lastname">نام خانوادگی</label>
+            <input
+              type="text"
+              class="bg-light form-control"
+              placeholder="شهباز"
+            />
+          </div>
+        </div>
+        <div class="row py-2">
+          <div class="col-md-6">
+            <label for="email">ایمیل</label>
+            <input
+              type="text"
+              class="bg-light form-control"
+              placeholder="alishahbaz2023@email.com"
+            />
+          </div>
+          <div class="col-md-6 pt-md-0 pt-3">
+            <label for="phone">تلفن</label>
+            <input
+              type="tel"
+              class="bg-light form-control"
+              placeholder="091200000000"
+            />
+          </div>
+        </div>
+        <div class="row py-2">
+          <div class="col-md-6">
+            <label for="country">کشور</label>
+            <select name="country" id="country" class="bg-light">
+              <option value="india" selected>ایران</option>
+              <option value="usa">امریکا</option>
+              <option value="uk">اسپانیا</option>
+              <option value="uae">ترکیه</option>
+            </select>
+          </div>
+          <div class="col-md-6 pt-md-0 pt-3" id="lang">
+            <label for="language">شهر</label>
+            <div class="arrow">
+              <select name="language" id="language" class="bg-light">
+                <option value="english" selected>شهرکرد</option>
+                <option value="arab">تهران</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="py-3 pb-4 border-bottom">
+          <button class="btn btn-primary mr-3">دخیره تغییرات</button>
+          <button class="btn border button">لغو تغییرات</button>
+        </div>
+        <div class="d-sm-flex align-items-center pt-3" id="deactivate">
+          <div>
+            <b>حساب خود را غیرفعال کنید</b>
+            <p>جزئیات مربوط به حساب و رمز عبور شرکت شما</p>
+          </div>
+          <div class="ml-auto">
+            <button class="btn danger">حذف حساب کاربری</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center text-white bg-dark">
+      <div class="container p-4">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">HSE</h5>
+              <div class="mt-3">
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+              </div>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">لینک ها</h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white text-decoration-none">
+                    صفحه اصلی</a
+                  >
+                </li>
+                <li>
+                  <a href="#!" class="text-white text-decoration-none"
+                    >آزمایشگاه</a
+                  >
+                </li>
+                <li>
+                  <a href="#!" class="text-white text-decoration-none">اخبار</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white text-decoration-none">آزمون</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <form action="">
+                <!--Grid row-->
+                <div class="row d-flex flex-column justify-content-center">
+                  <!--Grid column-->
+                  <div class="col-auto">
+                    <p class="pt-2">
+                      <strong>Sign up for our newsletter</strong>
+                    </p>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-12">
+                    <!-- Email input -->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="form5Example21"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        id="form5Example21"
+                        class="form-control w-100"
+                      />
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-auto">
+                    <!-- Submit button -->
+                    <button
+                      type="submit"
+                      class="btn btn-outline-danger mb-4 w-50"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </form>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Images -->
+        <section class="">
+          <div class="row">
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                data-ripple-color="light"
+              >
+                <img src="./assets/img/crousel-two/2.jpg" class="w-100" />
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                data-ripple-color="light"
+              >
+                <img src="./assets/img/crousel-two/2.jpg" class="w-100" />
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                data-ripple-color="light"
+              >
+                <img src="./assets/img/crousel-two/2.jpg" class="w-100" />
+              </div>
+            </div>
+          </div>
+          <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a
+                class="btn text-white btn-floating m-1"
+                style="background-color: #3b5998"
+                href="#!"
+                role="button"
+                ><i class="bi bi-facebook"></i
+              ></a>
+
+              <!-- Twitter -->
+              <a
+                class="btn text-white btn-floating m-1"
+                style="background-color: #55acee"
+                href="#!"
+                role="button"
+                ><i class="bi bi-twitter"></i
+              ></a>
+
+              <!-- Google -->
+              <a
+                class="btn text-white btn-floating m-1"
+                style="background-color: #dd4b39"
+                href="#!"
+                role="button"
+                ><i class="bi bi-google"></i
+              ></a>
+
+              <!-- Instagram -->
+              <a
+                class="btn text-white btn-floating m-1"
+                style="background-color: #ac2bac"
+                href="#!"
+                role="button"
+                ><i class="bi bi-instagram"></i
+              ></a>
+
+              <!-- Linkedin -->
+              <a
+                class="btn text-white btn-floating m-1"
+                style="background-color: #0082ca"
+                href="#!"
+                role="button"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+        </section>
+        <!-- Section: Images -->
+      </div>
+    </footer>
+    <!-- ? script start -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- ? script end -->
+  </body>
+</html>
