@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HSE</title>
+    <!-- ? link stylesheet start -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.css" />
+    <link
+      href=" https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css "
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- ? link stylesheet end -->
+  </head>
+  <body class="vh-100 d-flex align-items-center justify-content-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-7">
+          <div class="w-100 shadow px-5">
+            <h1 class="text-muted fs-3 my-3">بازیابی رمز عبور</h1>
+            <div id="multi-step-form-container ">
+              <!-- Form Steps / Progress Bar -->
+              <ul
+                class="form-stepper form-stepper-horizontal text-center mx-auto pl-0 mt-5"
+              >
+                <!-- Step 1 -->
+                <li
+                  class="form-stepper-active text-center form-stepper-list"
+                  step="1"
+                >
+                  <a class="mx-2">
+                    <span class="form-stepper-circle">
+                      <span>1</span>
+                    </span>
+                    <div class="label">تایید اطلاعات</div>
+                  </a>
+                </li>
+                <!-- Step 2 -->
+                <li
+                  class="form-stepper-unfinished text-center form-stepper-list"
+                  step="2"
+                >
+                  <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                      <span>2</span>
+                    </span>
+                    <div class="label text-muted">درستی اطلاعات</div>
+                  </a>
+                </li>
+                <!-- Step 3 -->
+                <li
+                  class="form-stepper-unfinished text-center form-stepper-list"
+                  step="3"
+                >
+                  <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                      <span>3</span>
+                    </span>
+                    <div class="label text-muted">رمز عبور جدید</div>
+                  </a>
+                </li>
+              </ul>
+              <!-- Step Wise Form Content -->
+              <form
+                id="userAccountSetupForm"
+                name="userAccountSetupForm"
+                enctype="multipart/form-data"
+                method="POST"
+              >
+                <!-- Step 1 Content -->
+                <section id="step-1" class="form-step row">
+                  <div class="col-10 offset-1">
+                    <form>
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example3"
+                          >ایمیل / نام کاربری</label
+                        >
+                        <input
+                          type="text"
+                          id="form3Example3"
+                          class="form-control"
+                        />
+                      </div>
+
+                      <button
+                        type="submit"
+                        id="loginBtn"
+                        class="btn btn-primary btn-block mb-4 w-100"
+                      >
+                        تایید
+                      </button>
+                    </form>
+                  </div>
+                  <div class="mt-3">
+                    <button
+                      class="button btn-navigate-form-step"
+                      type="button"
+                      step_number="2"
+                    >
+                      مرحله بعد
+                    </button>
+                  </div>
+                </section>
+                <!-- Step 2 Content, default hidden on page load. -->
+                <section id="step-2" class="form-step d-none row">
+                  <div class="col-10 offset-1">
+                    <form>
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example3"
+                          >کد اعتبار سنجی ارسال شده را وارد نمایید</label
+                        >
+                        <input
+                          type="text"
+                          id="form3Example3"
+                          class="form-control"
+                        />
+                      </div>
+
+                      <button
+                        type="submit"
+                        id="loginBtn"
+                        class="btn btn-primary btn-block mb-4 w-100"
+                      >
+                        تایید
+                      </button>
+                    </form>
+                  </div>
+                  <div class="mt-3">
+                    <button
+                      class="button btn-navigate-form-step"
+                      type="button"
+                      step_number="1"
+                    >
+                      مرحله قبل
+                    </button>
+                    <button
+                      class="button btn-navigate-form-step"
+                      type="button"
+                      step_number="3"
+                    >
+                      مرحله بعد
+                    </button>
+                  </div>
+                </section>
+                <!-- Step 3 Content, default hidden on page load. -->
+                <section id="step-3" class="form-step d-none row">
+                  <div class="col-10 offset-1">
+                    <form>
+                      <!-- Password input -->
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example4"
+                          >رمز عبور</label
+                        >
+                        <input
+                          type="password"
+                          id="form3Example4"
+                          class="form-control"
+                        />
+                      </div>
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example3"
+                          >تکرار رمز عبور</label
+                        >
+                        <input
+                          type="text"
+                          id="form3Example3"
+                          class="form-control"
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        id="show_success"
+                        class="btn btn-primary btn-block mb-4 w-100"
+                      >
+                        تایید
+                      </button>
+                      <button
+                        type="submit"
+                        id="show_warning"
+                        class="btn btn-danger btn-block mb-4 w-100"
+                      >
+                        نمایش ییغام خطا
+                      </button>
+                    </form>
+                  </div>
+                </section>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 text-center">
+          <img src="./assets/img/forgetpassword.svg" class="img-fluid w-75" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- ? script start -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js "></script>
+    <script src="./js/reset.js"></script>
+    <!-- ? script end -->
+  </body>
+</html>
